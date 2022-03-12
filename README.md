@@ -5,7 +5,6 @@
 `php -S localhost:3000`
 
 ### Comments
-
 ```
 // one line comment
 
@@ -14,7 +13,6 @@ This is a multiple-lines comment block
 that can be used on multiple lines
 */
 ```
-
 ### Naming conventions
 ```
 // PHP opening/closing tag
@@ -52,7 +50,6 @@ print_r($products);
 // Input from console
 $name = readline('What is your name : ');
 ```
-
 ### Variables Declaration
 ```
 $name = 'Jhon'; //string
@@ -76,9 +73,7 @@ echo is_int($age); // true
 echo is_float(12.5); // true
 echo is_string($name); // true
 ```
- 
 ### Strings
-
 ```
 // String can use single quote
 $name = 'Mike'
@@ -119,9 +114,7 @@ $pos = strpos($name, 'k'); # 2
 // Returns portion of string (offset / length)
 echo substr($name, 0, $pos); # Mi 
 ```
- 
 ### Numbers
-
 ```
 // Shortcut addition assignment
 $value = 10
@@ -147,9 +140,7 @@ echo round(1.49356, 2));  // returns 1.49
 // Random number 
 echo(rand(10, 100)); # 89
 ```
- 
 ### Conditionals
-
 ```
 // If / elseif / else
 if ($condition == 10) {
@@ -238,9 +229,7 @@ $type = match($color) {
 // Check if variable declare
 isset($color['red']);  # true
 ```
- 
 ### Loops and Iterations
-
 ```
 //for loop
 for ($i = 0; $i < 20; $i++) {
@@ -271,9 +260,7 @@ foreach ($values as $value) {
     }
 }
 ```
- 
 ### Arrays
-
 ```
 //Array declaration can contain any types
 $example = ['Mike', 50.2, true, ['10', '20']];
@@ -360,9 +347,7 @@ $items = [
 $found_key = array_search('product 3', array_column($items, 'name'));
 # return 2
 ```
- 
 ### Functions
-
 ```
 //function declararion
 function name($firstName, $lastName = 'defaultvalue') {
@@ -419,9 +404,7 @@ function logInfo(string $info) : void {
     ...
 }
 ```
- 
 ### Enumerations
-
 ```
 // Declaration
 enum InvoiceStatus
@@ -466,9 +449,7 @@ function getInvoiceStatus(InvoiceStatus $status)
 getInvoiceStatus(InvoiceStatus::Paid);
 // Paid1
 ```
-
 ### Files
-
 ```
 // Get the current dir
 $current_dir = __DIR__;
@@ -504,7 +485,6 @@ foreach ($array as $row) {
 }
 fclose($file);
 ```
-
 ### Errors
 ```
 //Throw Error
@@ -519,7 +499,6 @@ try {
     echo $e->getMessage();
 }
 ```
-
 ### OOP
 ```
 //class declaration
